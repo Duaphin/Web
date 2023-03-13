@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Le Chat Quantique</title>
+    <link rel="stylesheet" type="text/css" href="./css/quantique.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/hec.png">
+</head>
+
+<body id="debut">
+<div id="particle-container">
+</div>
+<video autoplay muted loop id="myVideo">
+    <source src="./image/fond.mp4" type="video/mp4">
+  </video>
+<header>
+    <nav class="head">
+            <a href="./quantique.html">
+            <nav id="logo">
+
+                <image src="./image/logochat mort.png" type="images/png" class="mort logochat"></image>
+                <image src="./image/logochat vivant.png" type="images/png" class="logochat vivant"></image>
+            </nav>
+        </a>
+
+
+        <nav id="nav">
+            <div class="menu"><a href="./origine.html">Origines</a>
+                <!--            <p class="puce">Comment la controverse de l'OQ est elle née ?</p></div>-->
+            </div>
+            <div class="menu"><a href="./ordinateur_quantique.html">Quantique informatique</a>
+                <!--            <p>Comment l'OQ fonctionne t'il et pourquoi n'existe t'il pas encore ?</p></div>-->
+            </div>
+            <div class="menu"><a href="./inquietude.html">Inquiètudes</a>
+                <!--            <p>Quelle menace plane sur notre société avec l'OQ ?</p></div>-->
+            </div>
+            <div class="menu"><a href="./interet.html">Intérêts</a>
+                <!--            <p>Quelles bienfaits pourraient nous apporter l'OQ ?</p></div>-->
+            </div>
+            <div class="menu"><a href="./formulaire.html">Votre avis</a></div>
+            <div class="menu"><a href="./a_propos.html">A propos</a></div>
+            <div class="menuburger">|||</div> 
+        </nav>
+    </nav>
+    <nav class="titre">
+
+        <p class="tit">L'ordinateur quantique</p>
+        <p>... la fin de notre technologie actuelle ?</p>
+    </nav>
+    <div class="burgermenu">
+        <h3 class="fermer">x</h3>
+        <div><a  href="origine.html">Origines</a></div>
+        <div><a  href="ordinateur_quantique.html">Quantique informatique</a></div>
+        <div><a  href="inquietude.html">Inquiétudes</a></div>
+        <div><a  href="interet.html">Intérêts</a></div>
+        <div><a  href="formulaire.html">Votre avis</a></div>
+        <div><a  href="a_propos.html">A propos</a></div>
+      </div>
+</header>
+
+
+<main>
+
+    <div class="allCards">
+        <div class="fond">
+            <div onclick="window.location.href = 'origine.html';" class="card blue">
+                <h2 class="titleHome">Origines de l'ordinateur quantique</h2>
+                <p class="contentHome">Découverte de l'ordinateur quantique depuis sa naissance au début du XXème siècle...</p>
+            </div>
+        </div>
+        <div class="fond">
+            <div onclick="window.location.href = 'ordinateur_quantique.html';" class="card green">
+                <h2 class="titleHome">Quantique Informatique</h2>
+                <p class="contentHome">Les ordinateurs quantiques, contrairement aux ordinateurs normaux qui utilisent des bits,
+        utilisent des qubits et des portes logiques quantiques afin de pouvoir les utiliser...</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="allCards">
+        <div class="fond">
+            <div onclick="window.location.href = 'interet.html';" class="card yellow">
+                <h2 class="titleHome">Apports et Intérêts</h2>
+                <p class="contentHome">L’ordinateur quantique ouvre des perspectives d’amélioration importante pour le monde de demain. Zoom sur les futurs changements...</p>
+            </div>
+        </div>
+        <div class="fond">
+            <div onclick="window.location.href = 'inquietude.html';" class="card purple">
+                <h2 class="titleHome">Inquiétudes et incidences</h2>
+                <p class="contentHome">L’algorithme cryptographique protégeant actuellement les données sur le net deviendrait obsolète face aux ordinateurs quantiques...</p>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+<footer>
+  <a href="#debut">Retour au début</a>
+  <p>© AS Informatique 2021-2022</p>
+</footer>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/JS quantique.js"></script>
+</body>

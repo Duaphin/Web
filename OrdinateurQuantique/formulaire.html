@@ -1,0 +1,115 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Avis</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="./image/hec.png">
+    <script src="js/libs/jquery/jquery.js" type="text/javascript"></script>
+
+</head>
+<body id="debut">
+<!-- la video -->
+<video autoplay muted loop id="myVideo">
+    <source src="./image/fond.mp4" type="video/mp4">
+</video>
+
+<!--le bloc avec logo et menu-->
+<div id="haut_page1">
+    <header>
+        <nav class="head">
+            <a href="./quantique.html">
+                <nav id="logo">
+                    <image src="./image/logochat mort.png" type="images/png" class="logochat mort"></image>
+                    <image src="./image/logochat vivant.png" type="images/png" class="logochat vivant"></image>
+                </nav>
+            </a>
+
+            <nav id="nav">
+                <div><a class="menu" href="origine.html">Origines</a>
+                    <!--            <p class="puce">Comment la controverse de l'OQ est elle née ?</p></div>-->
+                </div>
+                <div><a class="menu" href="ordinateur_quantique.html">Quantique informatique</a>
+                    <!--            <p>Comment l'OQ fonctionne t'il et pourquoi n'existe t'il pas encore ?</p></div>-->
+                </div>
+                <div><a class="menu" href="inquietude.html">Inquiétudes</a>
+                    <!--            <p>Quelle menace plane sur notre société avec l'OQ ?</p></div>-->
+                </div>
+                <div><a class="menu" href="interet.html">Intérêts</a>
+                    <!--            <p>Quelles bienfaits pourraient nous apporter l'OQ ?</p></div>-->
+                </div>
+                <div><a class="menu" href="formulaire.html">Votre avis</a></div>
+                <div><a class="menu"href="a_propos.html">A propos</a></div>
+                <div class="menuburger">|||</div>  
+            </nav>
+        </nav>
+        <div class="burgermenu">
+            <h3 class="fermer">x</h3>
+            <div><a  href="origine.html">Origines</a></div>
+            <div><a  href="ordinateur_quantique.html">Quantique informatique</a></div>
+            <div><a  href="inquietude.html">Inquiétudes</a></div>
+            <div><a  href="interet.html">Intérêts</a></div>
+            <div><a  href="formulaire.html">Votre avis</a></div>
+            <div><a  href="a_propos.html">A propos</a></div>
+          </div>
+    </header>
+</div>
+
+<form method="post" action="traitement.php" class="form">
+
+    <!--    Corps du formulaire-->
+    <h1> Votre avis nous intéresse ! </h1>
+
+    <div>
+        <label for="pseudo">Quel est votre pseudo ?</label>
+        <input type="text" name="pseudo" id="pseudo"/>
+    </div>
+
+    <div class="question">
+        <label for="avis1">Avez-vous d'autres avis ou commentaires sur la controverse ?</label>
+        <textarea name="avis1" id="avis1" class="avis" rows="5" cols="50"></textarea>
+    </div>
+
+    <div class="question">
+        <label for="avis2">Remarques, commentaires, améliorations sur le site internet</label>
+        <textarea name="avis2" id="avis2" class="avis" rows="5" cols="50"></textarea>
+    </div>
+
+    <input id="button" type="button"  value="Envoyer"/>
+</form>
+<div id="commentaire" class="commentaire"></div>
+
+<script>
+    $(document).ready(function (){
+
+        $("#button").click(function () {
+            let pseudo = $("#pseudo").val();
+            let avis1 = $("#avis1").val();
+            let avis2 = $("#avis2").val();
+
+            $("#commentaire")
+                .css({'visibility': 'visible'})
+                .append(
+                "<div class='pseudo'>" + pseudo + "</div>" +
+                "<div class='avis'>" + avis1 + "</div>" +
+                "<div class='avis'>" + avis2 + "</div>"
+            );
+
+
+
+        });
+
+    });
+</script>
+
+
+<!-- bas de page -->
+ <footer>
+  <a href="#debut">Retour au début</a>
+  <p>© AS Informatique 2021-2022</p>
+</footer>
+
+</body>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="./js/JS quantique.js"></script>
+</html>

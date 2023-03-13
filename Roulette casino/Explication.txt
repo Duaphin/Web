@@ -1,0 +1,30 @@
+4-60 Création des cases comme Objets.
+// de 0 à 36
+// valeur / couleur / partie / douzaine / moitié / frequence / mise / gain 
+// allcase contient tous les objects case
+
+65-85 Création des mises comme Objets.
+// 9 mises 
+// valeur / condition1 / condition2 / gain / mise 
+// allmise contient toutes les objects mise
+
+
+88 Var ListeMise[]  // listes des mises 
+	Var Everything = allcase + allmise
+89 Var thunesJoueurs  // argent dispo pour le joueur 
+
+
+92-114 function Ajout mise en cours 
+// var valeur // valeur sur le bouton sur lequel on clique 
+// verifDoubleMise(valeur) // si true 
+
+
+116 function verifDoubleMise(valeur)
+// vérifie si valeur est dans ListeMise[] 
+// return true or false
+
+
+A FAIRE !!!!!!!
+
+Plusieurs themes dont un truc pastel et peut etre noir et blanc sobre etc 
+en mode glassmorphism peut etre tout refaire en glassmorphism ça peut etre vraiment stylé

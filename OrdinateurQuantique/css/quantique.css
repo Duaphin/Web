@@ -1,0 +1,272 @@
+    /* font-family */
+    @font-face {
+    font-family: cap ;
+    src: url(font/Capsuula.ttf);
+}
+
+::selection{
+    background: rgb(22, 69, 88);
+    color: rgb(200, 75, 6);
+}
+
+    /* HEADER */
+header {
+    display:flex;
+    width: 100%;
+    flex-direction: column;
+    background: url("../image/fond.jpg");
+    background-size: 100%;
+}
+
+.head {
+    transition-duration: 2s;
+    background-color: rgba(117, 190, 218, 0.2);
+}
+
+.head:hover{
+    transition-duration: 3s;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.titre {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    font-family: cap;
+    font-weight: bolder;
+    font-size: 150%;
+    color: white;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 44%, rgba(0,0,0,0.938813025210084) 52%,
+    rgba(0,0,0,0.87718837535014) 58%, rgba(0,0,0,0.7791491596638656) 64%, rgba(0,0,0,0.6783088235294117) 70%,
+    rgba(0,0,0,0.5466561624649859) 76%, rgba(0,0,0,0.2497373949579832) 87%, rgba(0,212,255,0) 100%);
+}
+
+.tit {
+    font-size: 200%;
+    margin-bottom: 0;
+}
+
+
+
+    /* LOGO */
+.logochat {
+    width:80px;
+    border-radius: 100%;
+    position: absolute;
+}
+
+#logo {
+    height: 100px;
+}
+
+
+
+    /* MENU */
+.head nav {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: center;
+}
+
+a:hover{
+    font-weight: bold;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu {
+    font-family: cap;
+    color: white;
+    font-size:175%;
+    text-decoration: none;
+    display: flex;
+}
+
+
+.burgermenu{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 40%;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    background-color: rgb(31, 31, 43);
+    border: 1px solid whitesmoke
+}
+.menuburger{
+    color: azure;
+    display: flex;
+    font-weight: bold;
+    font-size: 40px;
+    transform: rotate(90deg);
+}
+.fermer{
+    color: aliceblue;
+    margin: 0px;
+    margin-left: 80%;
+}
+
+
+    /* BODY */
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 90%;
+    z-index: -1;
+}
+
+body{
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    margin: 0;
+}
+
+#particle-container {
+    width: 100%;
+    z-index: 1;
+}
+.particle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    justify-content: space-around;
+    z-index: 2;
+    font-family: cap;
+    color: white;
+
+}
+
+.allCards{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    border: solid 0.5px #ecb87c ;
+    text-align: center;
+    margin: 2%;
+    height: 200px;
+}
+
+.fond {
+    background-image: url(../image/fond.jpg);
+    width: 30%;
+    height: 50%;
+    cursor: pointer;
+}
+
+.blue:hover{
+    box-shadow: 1px 1px 5px 5px rgb(0, 255, 255);
+}
+.green:hover{
+    box-shadow: 1px 1px 5px 5px rgb(0, 255, 21);
+}
+.purple:hover{
+    box-shadow: 1px 1px 5px 5px rgb(255, 0, 221);
+}
+.yellow:hover{
+    box-shadow: 1px 1px 5px 5px rgb(208, 255, 0);
+}
+
+
+
+.contentHome{
+    color: white;
+    font-size: 22px;
+    text-align: unset;
+    margin-top: 36px;
+    margin-bottom: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+
+    /*FOOTER*/
+
+footer{
+    height: 200px;
+    margin-top: 5%;
+    text-align: center;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>a{
+    color: rgb(240, 113, 9);
+}
+
+footer>p{
+    background: rgba(255, 255, 255, 0.1);
+    width:  100%;
+}
+
+
+    /*RESPONSIVE*/
+
+@media screen and (max-width:1100px){
+    .menu{
+        font-size: 150%;
+    }
+}
+@media screen and (max-width:900px){
+    .menu{
+        font-size: 125%;
+        
+    }
+    .contentHome{
+        display: none;
+    }
+    .fond{
+        height: 100%;
+    }
+
+    .titleHome{
+        height: 100%;
+        margin-top: 30%;
+    }
+}
+@media screen and (min-width:700px){
+    .menuburger{
+        display: none;
+    }
+}
+@media screen and (max-width:700px){
+    
+    .menu{
+        display: none;
+    }
+    .menuburger{
+        display: flex;
+    }
+}
